@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="../home.html" class="logo">HEAVENLY MART</a>
+
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="deals.html">Deals</a>
+                <a href="orders.html">Orders</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="icons">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+
+            <div class="profile">
+                <p class="name">SUPRIT JAMDAR</p>
+                <div class="flex">
+                    <a href="profile.html" class="btn">profile</a>
+                    <a href="#" class="delete-btn">logout</a>
+                </div>
+                <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+            </div>
+
+        </section>
+
+    </header>
+
+    <section class="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Order Online</span>
+                        <h3>Sale is Live</h3>
+                        <a href="deals.html" class="btn">Explore</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/sale.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Order Online</span>
+                        <h3>Electronics</h3>
+                        <a href="electronics.html" class="btn">Explore</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/electronics.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Order Online</span>
+                        <h3>Fashion</h3>
+                        <a href="fashion.html" class="btn">Explore</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/fashion.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <section class="category">
+
+        <h1 class="title">Shopping Category</h1>
+
+        <div class="box-container">
+
+            <a href="deals.html" class="box">
+                <img src="images/sale.png" alt="">
+                <h3>Deals</h3>
+            </a>
+
+            <a href="electronics.html" class="box">
+                <img src="images/electronics.png" alt="">
+                <h3>Electronics</h3>
+            </a>
+
+            <a href="fashion.html" class="box">
+                <img src="images/fashion.png" alt="">
+                <h3>Fashion</h3>
+            </a>
+
+            <a href="home-furniture.html" class="box">
+                <img src="images/home-furniture.png" alt="">
+                <h3>Home & Furniture</h3>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="products">
+
+        <h1 class="title">Latest Deal's</h1>
+
+        <div class="box-container">
+
+            <form accept="" method="post" class="box">
+                <a href="uploaded_img/watch.png" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/watch.png" alt="">
+                <a href="category.html" class="cat">Order Now</a>
+                <div class="name">Watch</div>
+                <div class="flex">
+                    <div class="price"><span>₹</span>3550<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form>
+
+            <form accept="" method="post" class="box">
+                <a href="uploaded_img/shoes.png" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/shoes.png" alt="">
+                <a href="category.html" class="cat">Order Now</a>
+                <div class="name">Shoes</div>
+                <div class="flex">
+                    <div class="price"><span>₹</span>2500<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form>
+
+            <form accept="" method="post" class="box">
+                <a href="uploaded_img/suit.png" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/suit.png" alt="">
+                <a href="category.html" class="cat">Order Now</a>
+                <div class="name">Suit</div>
+                <div class="flex">
+                    <div class="price"><span>₹</span>9500<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form>
+
+            <form accept="" method="post" class="box">
+                <a href="uploaded_img/mobile.png" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/mobile.png" alt="">
+                <a href="category.html" class="cat">Orrder Now</a>
+                <div class="name">Mobile</div>
+                <div class="flex">
+                    <div class="price"><span>₹</span>14999<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form>
+
+            <form accept="" method="post" class="box">
+                <a href="uploaded_img/dress.png" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/dress.png" alt="">
+                <a href="category.html" class="cat">Order Now</a>
+                <div class="name">Dress</div>
+                <div class="flex">
+                    <div class="price"><span>₹</span>6000<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form>
+
+            <form accept="" method="post" class="box">
+                <a href="uploaded_img/table.png" class="fas fa-eye"></a>
+                <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+                <img src="uploaded_img/table.png" alt="">
+                <a href="category.html" class="cat">Order Now</a>
+                <div class="name">Table </div>
+                <div class="flex">
+                    <div class="price"><span>₹</span>9000<span>/-</span></div>
+                    <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+            </form> 
+
+        </div>
+
+        <div class="more-btn">
+            <a href="deals.html" class="btn">Veiw All</a>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <section class="box-container">
+
+            <div class="box">
+                <img src="images/email-icon.png" alt="">
+                <h3>Our Email</h3>
+                <a href="mailto:HEAVENLY-MART@gmail.com">HEAVENLY-MART@gmail.com</a>
+
+            </div>
+
+            <div class="box">
+                <img src="images/map-icon.png" alt="">
+                <h3>Our Address</h3>
+                <a href="https://www.google.com/maps">Belagavi, india - 590001</a>
+            </div>
+
+            <div class="box">
+                <img src="images/phone-icon.png" alt="">
+                <h3>Our Number</h3>
+                <a href="tel:6361062015">+91-6361062015</a>
+            </div>
+
+        </section>
+
+        <div class="credit">&copy; copyright @ 2024 by <span>THE HEAVENLY HUB</span> | all rights reserved!</div>
+
+    </footer>
+
+    <div class="loader">
+        <img src="images/loader.gif" alt="">
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        var swiper = new Swiper(".home-slider", {
+            loop: true,
+            grabCursor: true,
+            effect: "flip",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>
