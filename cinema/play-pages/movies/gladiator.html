@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gladiator</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="../../home.html" class="logo">HEAVENLY CINEMA</a>
+
+            <nav class="navbar">
+                <a href="../../home.html">Home</a>
+                <a href="../../movies.html">Movies</a>
+                <a href="../../series.html">Series</a>
+            </nav>
+
+            <div class="icons">
+                <a href="../../search.html"><i class="fas fa-search"></i></a>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+
+            <div class="profile">
+                <p class="name">SUPRIT JAMDAR</p>
+                <div class="flex">
+                    <a href="../../profile.html" class="btn">profile</a>
+                    <a href="#" class="delete-btn">logout</a>
+                </div>
+                <p class="account"><a href="../../login.html">login</a> or <a href="../../register.html">register</a></p>
+            </div>
+
+        </section>
+
+    </header>
+
+    <div class="movie-container">
+        <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2024/11/gladiator-ii-2024-poster.jpg?q=70&fit=crop&w=1140&h=&dpr=1" alt="Movie Poster" class="movie-image">
+        <div class="movie-info">
+            <h1 class="movie-title">Gladiator</h1>
+            <p class="movie-description">A betrayed Roman general fights for vengeance in the brutal world of gladiatorial combat.</p>
+            <button class="play-button" onclick="playMovie()">Play</button>
+        </div>
+    </div>
+    
+    <div class="video-player" id="videoPlayer">
+        <button class="close-button" onclick="closePlayer()">Close</button>
+        <iframe 
+            id="youtubePlayer"
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/P5ieIbInFpg?si=VI7jeP3XCZ5jq_EZ&controls=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+
+    <footer class="footer">
+
+        <section class="box-container">
+
+            <div class="box">
+                <img src="../../images/email-icon.png" alt="">
+                <h3>Our Email</h3>
+                <a href="mailto:HEAVENLY-CINEMA@gmail.com">HEAVENLY-CINEMA@gmail.com</a>
+
+            </div>
+
+            <div class="box">
+                <img src="../../images/map-icon.png" alt="">
+                <h3>Our Address</h3>
+                <a href="https://www.google.com/maps">Belagavi, india - 590001</a>
+            </div>
+
+            <div class="box">
+                <img src="../../images/phone-icon.png" alt="">
+                <h3>Our Number</h3>
+                <a href="tel:6361062015">+91-6361062015</a>
+            </div>
+
+        </section>
+
+        <div class="credit">&copy; copyright @ 2024 by <span>THE HEAVENLY HUB</span> | all rights reserved!</div>
+
+    </footer>
+
+    <div class="loader">
+        <img src="../../images/loader.gif" alt="">
+    </div>
+
+    <script src="../../js/script.js"></script>
+
+    <script>
+        function playMovie() {
+            document.getElementById('videoPlayer').style.display = 'block';
+        }
+    
+        function closePlayer() {
+            document.getElementById('videoPlayer').style.display = 'none';
+        }
+    </script>
+    
+
+</body>
+
+</html>

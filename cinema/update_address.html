@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="../home.html" class="logo">HEAVENLY CINEMA</a>
+
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="series.html">Series</a>>
+            </nav>
+
+            <div class="icons">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+
+            <div class="profile">
+                <p class="name">SUPRIT JAMDAR</p>
+                <div class="flex">
+                    <a href="profile.html" class="btn">Profile</a>
+                    <a href="#" class="delete-btn">Logout</a>
+                </div>
+                <p class="account"><a href="login.html">Login</a> or <a href="register.html">Register</a></p>
+            </div>
+
+        </section>
+
+    </header>
+
+    <section class="form-container">
+
+        <form action="" method="post">
+            <h3>your address</h3>
+            <input type="text" maxlength="50" placeholder="flat no. and building name" required class="box" name="flat">
+            <input type="text" maxlength="50" placeholder="area name" required class="box" name="street">
+            <input type="text" maxlength="50" placeholder="city name" required class="box" name="city">
+            <input type="text" maxlength="50" placeholder="state name" required class="box" name="state">
+            <input type="text" maxlength="50" placeholder="country name" required class="box" name="country">
+            <input type="number" min="0" max="999999" placeholder="pin code" required class="box" name="pin_code" onkeypress="if(this.value.length == 6) return false;">
+            <input type="submit" value="save address" name="submit" class="btn">
+        </form>
+
+    </section>
+
+    <footer class="footer">
+
+        <section class="box-container">
+
+            <div class="box">
+                <img src="images/email-icon.png" alt="">
+                <h3>Our Email</h3>
+                <a href="mailto:HEAVENLY-CINEMA@gmail.com">HEAVENLY-CINEMA@gmail.com</a>
+
+            </div>
+
+            <div class="box">
+                <img src="images/map-icon.png" alt="">
+                <h3>Our Address</h3>
+                <a href="https://www.google.com/maps">Belagavi, india - 590001</a>
+            </div>
+
+            <div class="box">
+                <img src="images/phone-icon.png" alt="">
+                <h3>Our Number</h3>
+                <a href="tel:6361062015">+91-6361062015</a>
+            </div>
+
+        </section>
+
+        <div class="credit">&copy; copyright @ 2024 by <span>HTHE HEAVENLY HUB</span> | all rights reserved!</div>
+
+    </footer>
+
+    <div class="loader">
+        <img src="images/loader.gif" alt="">
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
